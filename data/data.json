@@ -1,0 +1,44 @@
+{
+    "character" : 
+       {
+            "name" : "Mefertipuo",
+            "health":100,
+            "stamina":100,
+            "jobs" : ["swordmen","archeologist"],
+            "attributes":{
+                "fuerza":7
+            },
+            "skills":{
+                "atletismo":{
+                    "level" : 7,
+                    "base": "fuerza",
+                    "haki": "armor"
+
+                },
+                "acrobacia":{
+                    "level" : 7,
+                    "base": "fuerza",
+                    "haki": ""
+
+                }
+            },
+            "hakis":{
+                "armor":7,
+                "observation":7,
+                "presence":7
+            },
+            "objects":{
+                "armor":{
+
+                },
+                "weapon":{
+
+                }
+            },
+            "techniques" : {
+                
+            }
+
+       }
+    
+}
