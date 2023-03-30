@@ -6,7 +6,16 @@
             "stamina":100,
             "jobs" : ["swordmen","archeologist"],
             "attributes":{
-                "fuerza":7
+                "fuerza":7,
+                "destreza":7,
+                "constitucion":7,
+                "inteligencia":7,
+                "voluntad":7,
+                "percepcion":7,
+                "carisma":7,
+                "bloqueo":7,
+                "esquiva":7
+                
             },
             "skills":{
                 "atletismo":{
@@ -18,7 +27,7 @@
                 "acrobacia":{
                     "level" : 7,
                     "base": "fuerza",
-                    "haki": ""
+                    "haki": "none"
 
                 }
             },
