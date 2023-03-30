@@ -10,7 +10,7 @@ class baseController :
         self.characterDataModel.setObjectData(charcaterData["character"])
         pass
     def tirada (self):
-        tirada = input("Seleccione su tirada \n entre las siguientes:")
+        tirada = input("Seleccione su tirada "+str(self.characterDataModel.attrList)+"\n entre las anteriores : ")
         data = self.characterDataModel.returnThrowNecesaryData(tirada)
         print(data)
         pass

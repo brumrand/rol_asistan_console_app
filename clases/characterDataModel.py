@@ -8,12 +8,16 @@ class characterDataModel :
         self.attributes = jsonData["attributes"]
         #["skills"]:
         self.skills =  jsonData["skills"]
+               #attr skills
+        attributes = ""
+        for key in self.skills:
+            attributes = attributes+"\n"+str(key)
+        self.attrList = attributes
         #["hakis"]:
         self.hakis = jsonData["hakis"]
-        
         print("Bienvenido "+self.name)
-        print( self.skills)
         pass
+
     def returnThrowNecesaryData(self, data):
         name = data
         data = self.skills[data]
@@ -23,7 +27,7 @@ class characterDataModel :
     def _hakiUseLevel(self, type):
         if type != "none":
             level = self.hakis[type]
-            #print("su nivel de haki de "+type+" es "+level)
+            print("su nivel de haki de "+str(type)+" es "+str(level))
             use = input("Cuanto haki desea usar -> ")
             use = int(use)
             if use > level:
@@ -32,7 +36,7 @@ class characterDataModel :
                  use = 0
         else :
             use = 0
-            return use
+        return int(use)
         
     def _attackOrThrow (self, data, type):
         if type==0:

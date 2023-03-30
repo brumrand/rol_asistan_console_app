@@ -12,29 +12,203 @@
                 "inteligencia":7,
                 "voluntad":7,
                 "percepcion":7,
+                "habilidad":7,
                 "carisma":7,
-                "bloqueo":7,
-                "esquiva":7
+                "empty":0
                 
             },
             "skills":{
-                "atletismo":{
-                    "level" : 7,
-                    "base": "fuerza",
-                    "haki": "armor"
-
-                },
                 "acrobacia":{
+                    "level" : 7,
+                    "base": "destreza",
+                    "haki": "none"
+                },
+                "actuar":{
+                    "level" : 7,
+                    "base": "carisma",
+                    "haki": "none"
+                },
+                "alerta":{
+                    "level" : 7,
+                    "base": "percepcion",
+                    "haki": "none"
+                },
+                "arqueologia":{
+                    "level" : 7,
+                    "base": "inteligencia",
+                    "haki": "none"
+                },
+                "artesania":{
+                    "level" : 7,
+                    "base": "destreza",
+                    "haki": "none"
+                },
+                "artilleria":{
+                    "level" : 7,
+                    "base": "destreza",
+                    "haki": "none"
+                },
+                "atletismo":{
+                    "level" : 17,
+                    "base": "fuerza",
+                    "haki": "constitucion"
+                },
+                "bloqueo":{
+                    "level" : 27,
+                    "base": "empty",
+                    "haki": "armadura"
+                },
+                "callegeo":{
+                    "level" : 7,
+                    "base": "inteligencia",
+                    "haki": "none"
+                },
+                "ciencia":{
+                    "level" : 7,
+                    "base": "inteligencia",
+                    "haki": "none"
+                },
+                "climatologia":{
+                    "level" : 7,
+                    "base": "inteligencia",
+                    "haki": "none"
+                },
+                "conducir":{
+                    "level" : 7,
+                    "base": "habilidad",
+                    "haki": "none"
+                },
+                "coraje":{
+                    "level" : 7,
+                    "base": "voluntad",
+                    "haki": "none"
+                },
+                "disparo":{
+                    "level" : 7,
+                    "base": "percepcion",
+                    "haki": "none"
+                },
+                "educacion":{
+                    "level" : 7,
+                    "base": "destreza",
+                    "haki": "none"
+                },
+                "empatia":{
+                    "level" : 7,
+                    "base": "inteligencia",
+                    "haki": "none"
+                },
+                "etiqueta":{
+                    "level" : 7,
+                    "base": "carisma",
+                    "haki": "none"
+                },
+                "esquiva":{
+                    "level" : 20,
+                    "base": "empty",
+                    "haki": "observacion"
+                },
+                "intimidar":{
                     "level" : 7,
                     "base": "fuerza",
                     "haki": "none"
-
+                },
+                "investigacion":{
+                    "level" : 7,
+                    "base": "inteligencia",
+                    "haki": "none"
+                },
+                "juego":{
+                    "level" : 7,
+                    "base": "habilidad",
+                    "haki": "none"
+                },
+                "liderazgo":{
+                    "level" : 7,
+                    "base": "carisma",
+                    "haki": "none"
+                },
+                "lucha1":{
+                    "level" : 7,
+                    "base": "destreza",
+                    "haki": "none"
+                },
+                "lucha2":{
+                    "level" : 17,
+                    "base": "fuerza",
+                    "haki": "armadura"
+                },
+                "montar":{
+                    "level" : 7,
+                    "base": "destreza",
+                    "haki": "none"
+                },
+                "medicina":{
+                    "level" : 27,
+                    "base": "inteligencia",
+                    "haki": "armadura"
+                },
+                "mantra":{
+                    "level" : 7,
+                    "base": "inteligencia",
+                    "haki": "none"
+                },
+                "navegar":{
+                    "level" : 7,
+                    "base": "habilidad",
+                    "haki": "none"
+                },
+                "orientacion":{
+                    "level" : 7,
+                    "base": "percepcion",
+                    "haki": "none"
+                },
+                "pelea":{
+                    "level" : 20,
+                    "base": "fuerza",
+                    "haki": "armadura"
+                },
+                "persuasion":{
+                    "level" : 5,
+                    "base": "carisma",
+                    "haki": "rey"
+                },
+                "presencia":{
+                    "level" : 7,
+                    "base": "voluntad",
+                    "haki": "none"
+                },
+                "punteria":{
+                    "level" : 7,
+                    "base": "percepcion",
+                    "haki": "none"
+                },
+                "sigilo":{
+                    "level" : 7,
+                    "base": "destreza",
+                    "haki": "none"
+                },
+                "subterfugio":{
+                    "level" : 7,
+                    "base": "carisma",
+                    "haki": "none"
+                },
+                "supervivencia":{
+                    "level" : 7,
+                    "base": "constitucion",
+                    "haki": "none"
+                },
+                "tenacidad":{
+                    "level" : 7,
+                    "base": "voluntad",
+                    "haki": "none"
                 }
+
             },
             "hakis":{
-                "armor":7,
-                "observation":7,
-                "presence":7
+                "armadura":7,
+                "observacion":7,
+                "rey":7
             },
             "objects":{
                 "armor":{
