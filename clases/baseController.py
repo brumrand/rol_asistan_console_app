@@ -14,4 +14,9 @@ class baseController :
         data = self.characterDataModel.returnThrowNecesaryData(tirada)
         print(data)
         pass
+    def tecnica (self):
+        tirada = input("Seleccione su tirada "+str(self.characterDataModel.customSkillList)+"\n entre las anteriores : ")
+        data = self.characterDataModel.techniqueThrow(tirada)
+        print(data)
+        pass
     pass
