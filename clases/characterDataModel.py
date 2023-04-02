@@ -10,8 +10,11 @@ class characterDataModel :
         self.skills =  jsonData["skills"]
                #attr skills
         attributes = ""
+        attrArray = []
         for key in self.skills:
             attributes = attributes+"\n"+str(key)
+            attrArray.append(key)
+        self.attrArray = attrArray
         self.attrList = attributes
         #["hakis"]:
         self.hakis = jsonData["hakis"]
@@ -19,10 +22,12 @@ class characterDataModel :
         self.objects = jsonData["objects"]
         #tecnicas
         self.techiques = jsonData["techniques"]
-        print(self.techiques)
         customSkillList = ""
+        customskillsArrays = []
         for key in self.techiques:
+            customskillsArrays.append(key)
             customSkillList = customSkillList+"\n"+str(key)
+        self.customskillsArrays = customskillsArrays
         self.customSkillList = customSkillList
          #saludo
         print("Bienvenido "+self.name)
@@ -58,13 +63,25 @@ class characterDataModel :
                       }, 3) 
 
         if name == "bloqueo" or  name == "esquiva" :
-            return self._attackOrThrow({
-            "name":name, 
-            "skill": data["level"], 
-            "attr":self.attributes[data["base"]], 
-            "armor":self.objects["armor"][name],
-            "haki": haki,     
-            "cost": (haki*3)}, 2) 
+             if techData == 0:
+                return self._attackOrThrow({
+                "name":name, 
+                "skill": data["level"], 
+                "attr":self.attributes[data["base"]], 
+                "armor":self.objects["armor"][name],
+                "haki": haki,     
+                "cost": (haki*3)}, 2) 
+             else:
+                return self._attackOrThrow({
+                "name":name, 
+                "skill": data["level"], 
+                "attr":self.attributes[data["base"]], 
+                "tecnica":techData["attack"], 
+                "armor":self.objects["armor"][name],
+                "haki": haki,     
+                "cost":               ((haki*3)+techData["cost"]),
+                "extraInfo":         techData["extraInfo"]
+                }, 4) 
         else :
             return self._attackOrThrow({
             "name":name, 
@@ -104,7 +121,9 @@ class characterDataModel :
             attack = data["skill"]+ data["attr"]+ (data["haki"] *2)+ data["accurancy"]
             damage =data["damage"]+ attack
             text = "\n skill  : "+str(data["skill"])+"\n atribute : "+str(data["attr"])+"\n haki : "+str(data["haki"])+"\n accurancy : "+str(data["accurancy"])+"\n damage : "+str(data["damage"])+"\n cost : "+str(data["cost"])+"\n attack : " +str(attack)+"--damage : "+str(damage)+"\n extra info  : "+str(data["extraInfo"])
-        
+        elif type == 4 :
+            attack = data["skill"]+ data["attr"]+ (data["haki"] *2)+ data["armor"]+ data["tecnica"]
+            text = "\n skill  : "+str(data["skill"])+"\n atribute : "+str(data["attr"])+"\n haki : "+str(data["haki"])+"\n tecnica : "+str(data["tecnica"])+"\n armor : "+str(data["armor"])+"\n cost : "+str(data["cost"])+"\n defensa : " +str(attack)+"\n extra info  : "+str(data["extraInfo"])
         return text
     def techniqueThrow(self, data):
         name = data

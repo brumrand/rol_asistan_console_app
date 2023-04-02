@@ -233,6 +233,15 @@
                     "efects":{
                         "empuje":"lvl 3 30mmetros"
                     }
+                },
+                "tekkai":{
+                    "skill":"bloqueo",
+                    "attack":16,
+                    "cost":23,
+                    "damage":0,
+                    "efects":{
+                        "dmage":"de ser golpeado el rival recibe 12 ptos de daño"
+                    }
                 }
             }
 
